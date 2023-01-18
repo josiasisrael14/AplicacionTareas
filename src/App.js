@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import misuse from './imagenes/react.png';
+import Tareas from './componentes/Tareas';
+import Tareaformulario from './componentes/Tareaformulario';
+import ListasTareas from './componentes/ListasTareas';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Aplicacion-tareas">
+     <div className='logo-contenedor'>
+
+      
+      <img src ={misuse} className='logo-imagen' />
+      
+    
     </div>
+   <div className='tareas-listas-principal'>
+<h1>Mis tareas</h1>
+<ListasTareas/>
+
+   </div>
+   
+
+    </div> 
   );
 }
 
